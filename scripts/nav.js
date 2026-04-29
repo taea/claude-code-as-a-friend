@@ -10,13 +10,17 @@ export function initNav(deckEl, indicatorEl) {
     for (let k = 0; k < slides.length; k++) {
       slides[k].classList.toggle('active', k === i);
     }
+    const layout = slides[i].dataset.layout;
     if (indicatorEl) {
-      const layout = slides[i].dataset.layout;
       const hideOn = new Set(['cover', 'cover-all', 'end']);
       indicatorEl.hidden = hideOn.has(layout);
       indicatorEl.textContent = `${i + 1} / ${slides.length}`;
       indicatorEl.classList.toggle('invert', layout === 'cover-all');
     }
+    // ナビキャレットの表示制御に使うデータ属性
+    document.body.dataset.activeLayout = layout || 'default';
+    document.body.dataset.navAtStart = i === 0 ? 'true' : 'false';
+    document.body.dataset.navAtEnd = i === slides.length - 1 ? 'true' : 'false';
   }
 
   function show(i) {
@@ -47,6 +51,16 @@ export function initNav(deckEl, indicatorEl) {
       case 'End':
         e.preventDefault(); last(); break;
     }
+  });
+
+  // ---- キャレットボタン ----
+  document.getElementById('nav-prev')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    prev();
+  });
+  document.getElementById('nav-next')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    next();
   });
 
   // ---- 画面端クリック ----
