@@ -247,7 +247,7 @@ color:
     - 花火職人っぽいｗ **「へい親分、合点でいっ！3sに一回ド派手に発火するようにburstブチかますぜ！」**
 
 
-# Opus 4.7 侍 からのコメント
+## Opus 4.7 侍 からのコメント
 
 <img width="1400" alt="image.png (265.2 kB)" src="https://img.esa.io/uploads/production/attachments/102/2026/04/26/135168/00a5d9ff-13ab-4a67-b512-d787f6a57db0.png">
 
