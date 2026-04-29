@@ -45,7 +45,7 @@ python3 -m http.server 8765
 
 ## 原稿の書き方
 
-### フロントマター
+### Frontmatter
 
 ```yaml
 ---
