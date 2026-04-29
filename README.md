@@ -17,7 +17,7 @@
 
 - 6 レイアウト：`cover` / `default` / `2column`（A: 画像+本文 / B: h3 で2列分割）/ `cover-all` / `end`
 - `# h1` / `## h2` / `---` でスライドを分割。h2 はサブセクション扱い
-- フロントマターで Google Fonts と配色を切り替え（`fonts.heading` / `fonts.body` / `fonts.ja.heading` / `fonts.ja.body` / `color.heading` / `color.body` / `color.background`）
+- Frontmatter で Google Fonts と配色を切り替え（`fonts.heading` / `fonts.body` / `fonts.ja.heading` / `fonts.ja.body` / `color.heading` / `color.body` / `color.background`）
 - ナビゲーション：矢印キー / Space / Home / End / 画面左右クリック / 画面両端のキャレット / `#5` のようなURLハッシュ直リンク
 - 1280×720 を `transform: scale()` でビューポートに自動フィット
 - 寛容なパーサー：HTMLコメントの `<!--` / `<!---` / `--->` 混在 OK、`2colmun` のようなレイアウト名タイポも自動補正、ページ区切り `--` も許容、YAML の `#000000` / `@xxx` の予約衝突も自動エスケープ
