@@ -1,0 +1,49 @@
+/* ナビゲーション関連 */
+
+#page-indicator {
+  position: fixed;
+  right: 18px;
+  bottom: 14px;
+  z-index: 50;
+  pointer-events: none;
+  font-family: var(--font-body), sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.32);
+  user-select: none;
+  font-variant-numeric: tabular-nums;
+}
+
+#page-indicator[hidden] {
+  display: none;
+}
+
+/* cover-all 等の暗い背景の上では白く表示 */
+#page-indicator.invert {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* 画面端のクリックゾーンの当たり判定はJS側で。
+   カーソルだけは雰囲気としてポインターっぽく表示しておく */
+#stage {
+  cursor: default;
+}
+
+/* ---- レスポンシブ ------------------------------------------------------ */
+/* 縦持ち or 極端に小さいビューポートでは案内を表示 */
+@media (orientation: portrait) and (max-width: 700px) {
+  #stage::before {
+    content: "横向きで見ると綺麗ですよ ↻";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    text-align: center;
+    font-family: var(--font-body), sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+  }
+}
