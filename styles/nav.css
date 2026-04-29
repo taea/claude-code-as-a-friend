@@ -1,5 +1,68 @@
 /* ナビゲーション関連 */
 
+/* ---- 左右キャレット ----------------------------------------------------- */
+.nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+  color: var(--color-body);
+  opacity: 0.25;
+  transition: opacity 180ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  font-family: inherit;
+}
+.nav-arrow:hover {
+  opacity: 1;
+}
+.nav-arrow:active {
+  opacity: 0.5;
+  transition-duration: 60ms;
+}
+.nav-arrow:focus {
+  outline: none;
+}
+.nav-arrow:focus-visible {
+  outline: 2px solid var(--color-body);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.nav-arrow .material-symbols-outlined {
+  /* PCで概ね 50px、ビューポートに追随 */
+  font-size: clamp(36px, 3.5vw, 60px);
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48;
+  line-height: 1;
+}
+#nav-prev {
+  left: 8px;
+}
+#nav-next {
+  right: 8px;
+}
+
+/* 表示制御（active slide のレイアウト・位置に応じて） */
+body[data-active-layout="cover-all"] .nav-arrow,
+body[data-nav-at-start="true"] #nav-prev,
+body[data-nav-at-end="true"] #nav-next,
+body[data-active-layout="cover"] #nav-prev,
+body[data-active-layout="end"] #nav-next {
+  display: none;
+}
+
+
 #page-indicator {
   position: fixed;
   right: 18px;
