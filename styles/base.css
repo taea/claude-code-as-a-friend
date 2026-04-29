@@ -74,6 +74,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
   letter-spacing: 0.005em;
+  /* 日本語見出しはプロポーショナル詰め（明朝系で映える） */
+  font-feature-settings: "palt";
 }
 
 h1 {
