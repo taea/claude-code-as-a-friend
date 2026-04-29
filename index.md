@@ -9,7 +9,7 @@ fonts:
   body: https://fonts.google.com/specimen/Plus+Jakarta+Sans?preview.script=Latn
   ja:
     heading: https://fonts.google.com/specimen/Zen+Old+Mincho?query=zen&categoryFilters=Serif:%2FSerif%2FTransitional
-    body: https://fonts.google.com/noto/specimen/Noto+Serif+JP?query=noto&lang=ja_Jpan&categoryFilters=Serif:%2FSerif%2FTransitional&preview.lang=ja_Jpan
+    body: https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=Noto
 color:
   heading: #000000
   body: #000000
