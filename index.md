@@ -38,15 +38,6 @@ color:
 - 東京・三鷹在住
 - Anthropic厨 (？
 
----
-
-<!--- layout: cover-all -->
-
-<img width="1780" alt="スクリーンショット 2026-04-26 8.20.37.png (5.3 MB)" src="https://img.esa.io/uploads/production/attachments/102/2026/04/26/135168/12b1166b-8e55-4705-8d34-186fd4a4a3a0.png">
-
-<figcaption class="upper"">最近の仕事（渋谷開催・Keynoteヤバい！来てね！） https://kaigionrails.org</figcaption>
-
-
 # うちの Claude Code 座組
 
 <!--- layout: 2colmun -->
