@@ -1,6 +1,6 @@
 # Claude Code as a Friend
 
-[「うちの子（※AI）の自慢LT会」（2026-04-30 / #技術書ライブラリー @早稲田）](https://techbooklibrary.connpass.com/event/389651) の発表スライドと、そのために作った Markdown スライドジェネレーター。
+[「うちの子（※AI）の自慢LT会」](](https://techbooklibrary.connpass.com/event/389651))（2026-04-30 / [#技術書ライブラリー](https://techbooklibrary.jp/) @早稲田） の発表スライドと、そのために作った Markdown スライドジェネレーター。
 
 🔗 **Live**: https://taea.github.io/claude-code-as-a-friend/
 
