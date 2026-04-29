@@ -57,6 +57,18 @@ function mdToFragment(md) {
   return tpl.content;
 }
 
+// Frontmatter の date が文字列でも Date オブジェクトでも YYYY-MM-DD に整える
+function formatDate(value) {
+  if (value == null) return '';
+  if (value instanceof Date) {
+    const y = value.getUTCFullYear();
+    const m = String(value.getUTCMonth() + 1).padStart(2, '0');
+    const d = String(value.getUTCDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+  return String(value);
+}
+
 function buildHeading(slide) {
   if (!slide.heading) return null;
   const tag = slide.headingLevel === 2 ? 'h2' : 'h1';
@@ -159,7 +171,16 @@ function renderCover(section, slide, frontmatter) {
   if (frontmatter.event) {
     const p = document.createElement('p');
     p.className = 'cover-event';
-    p.textContent = frontmatter.event;
+    const eventName = document.createElement('strong');
+    eventName.textContent = frontmatter.event;
+    p.appendChild(eventName);
+    if (frontmatter.date) {
+      p.appendChild(document.createTextNode(' '));
+      const date = document.createElement('span');
+      date.className = 'cover-date';
+      date.textContent = formatDate(frontmatter.date);
+      p.appendChild(date);
+    }
     meta.appendChild(p);
   }
   if (frontmatter.venue) {

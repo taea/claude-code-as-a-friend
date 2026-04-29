@@ -77,6 +77,15 @@
   margin: 12px 0 0;
   opacity: 0.85;
 }
+.cover-event strong {
+  font-weight: 700;
+}
+.cover-date {
+  margin-left: 10px;
+  font-weight: normal;
+  opacity: 0.75;
+  letter-spacing: 0.04em;
+}
 .cover-venue {
   font-size: 18px;
   margin: 0;
