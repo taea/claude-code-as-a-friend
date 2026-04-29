@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>OGP preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layouts.css">
+  <style>
+    /* OGP は 1200x630 で生成 */
+    :root {
+      --base-width: 1200px;
+      --base-height: 630px;
+    }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+    }
+    #stage {
+      width: 1200px;
+      height: 630px;
+    }
+    #deck {
+      width: 1200px;
+      height: 630px;
+      transform: none !important;
+    }
+    .slide {
+      width: 1200px;
+      height: 630px;
+      padding: 56px 96px;
+    }
+    /* スクショの邪魔になる要素は隠す */
+    #page-indicator, #loading {
+      display: none !important;
+    }
+    /* OGPサイズに合わせて表紙の文字サイズも調整 */
+    .layout-cover .cover-title {
+      font-size: 76px;
+    }
+    .layout-cover .cover-decoration img {
+      max-width: 180px;
+      max-height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage">
+    <main id="deck"></main>
+  </div>
+  <script type="module">
+    import { parseMarkdown } from './scripts/parser.js';
+    import { applyTheme } from './scripts/theme.js';
+    import { renderDeck } from './scripts/renderer.js';
+
+    (async () => {
+      const res = await fetch('index.md');
+      const text = await res.text();
+      const { frontmatter, slides } = parseMarkdown(text);
+      applyTheme(frontmatter);
+      // 表紙だけを描画
+      const cover = slides.find((s) => s.layout === 'cover') || slides[0];
+      const deckEl = document.getElementById('deck');
+      renderDeck(deckEl, [cover], frontmatter);
+      const slide = deckEl.querySelector('.slide');
+      if (slide) slide.classList.add('active');
+      document.body.classList.add('ready');
+    })();
+  </script>
+</body>
+</html>
