@@ -3,6 +3,7 @@ title: Claude Code as a  Friend
 author: Taeko Akatsuka
 author_id: @ken_c_lo / taea
 event: うちの子（※AI）の自慢LT会
+date: "2026-04-30"
 venue: #技術書ライブラリー @早稲田
 fonts:
   heading: https://fonts.google.com/specimen/DM+Serif+Text?query=DM&categoryFilters=Serif:%2FSerif%2FTransitional&preview.script=Latn
