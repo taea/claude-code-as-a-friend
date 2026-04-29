@@ -120,8 +120,9 @@ h4 {
   padding-left: 1.4em;
 }
 
-.content li {
-  margin-bottom: 6px;
+.content li,
+.two-col-col li {
+  margin-bottom: 12px;
 }
 
 .content li > ul,
@@ -175,23 +176,23 @@ h4 {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.content table {
+.slide table {
   border-collapse: collapse;
   margin: 8px 0 14px;
   font-size: 22px;
+  border: 1px solid var(--color-body);
 }
 
-.content th,
-.content td {
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  padding: 7px 14px;
+.slide th,
+.slide td {
+  border: 1px solid var(--color-body);
+  padding: 10px 18px;
   text-align: left;
   vertical-align: middle;
 }
 
-.content th {
+.slide th {
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.04);
 }
 
 .content img {
