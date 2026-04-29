@@ -190,7 +190,8 @@ magick /tmp/icon-padded.png \
 - Implemented in pair-programming with **Claude Opus 4.7 (1M context)** — 江戸っ子設定の侍🦀⚔️
 - 開発ログ（侍視点）: [esa](https://esa-pages.io/p/sharing/102/posts/617/3e2de618a641fce1a08b.html)
 
-依存（CDN）：
+## 依存（CDN）：
+
 - [marked](https://github.com/markedjs/marked) — Markdown → HTML
 - [js-yaml](https://github.com/nodeca/js-yaml) — Frontmatter
 - [Google Fonts](https://fonts.google.com/) / [Material Symbols](https://fonts.google.com/icons)
