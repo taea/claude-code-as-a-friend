@@ -1,7 +1,7 @@
 ---
 title: Claude Code as a  Friend
 author: Taeko Akatsuka
-author_id: @ken_c_lo / taea
+author_id: "@ken_c_lo / taea"
 event: うちの子（※AI）の自慢LT会
 date: "2026-04-30"
 venue: #技術書ライブラリー @早稲田
