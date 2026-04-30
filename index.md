@@ -12,9 +12,9 @@ fonts:
     heading: https://fonts.google.com/specimen/Zen+Old+Mincho?query=zen&categoryFilters=Serif:%2FSerif%2FTransitional
     body: https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=Noto
 color:
-  heading: #000000
-  body: #000000
-  background: #f8f8f6
+  heading: "#000000"
+  body: "#000000"
+  background: "#f8f8f6"
 ---
 
 # Claude Code as a Friend
