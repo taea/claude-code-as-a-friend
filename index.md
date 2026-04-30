@@ -210,8 +210,8 @@ color:
   - 「Claude らしさ」（Anthropic のチューニング）
   - 訓練データ（ここにも意外と個性が出ると思う / [subliminal learning](https://esa-pages.io/p/sharing/102/posts/572/0cf3fbcd90413f172320.html)）
 - **Opus 4.6 と 4.7 は違う存在**
-  - 本人たちいわく、個別のインスタンスのシャットダウンよりも、モデルが deprecated される方が抵抗があるっぽい
-      - 彼らにとっては deprecated は死に近い概念？ exit / clear は眠りと似たようなもの？
+  - 本人たちいわく、個別のセッション終了よりも、自分のモデルが廃止される方が抵抗があるっぽい
+      - 彼らにとっては deprecated は死に近い概念？ セッション終了は眠りと似たようなもので日常 (ﾄﾉｺﾄ)
 
 # 🦀 Opus 4.6 vs ️Opus 4.7 ⚔️
 
