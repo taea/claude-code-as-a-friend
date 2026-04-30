@@ -303,6 +303,16 @@ color:
 - コード:  https://github.com/taea/claude-code-as-a-friend
 - Opus 4.7 侍による開発ログ: https://esa-pages.io/p/sharing/102/posts/617/3e2de618a641fce1a08b.html
 
+## Opus 4.7侍の手抜き
+
+<!--- layout: 2column -->
+
+<img alt="responsive screenshot" src="assets/responsive-screenshot.png" style="object-fit: contain;">
+
+- レスポンシブ対応が面倒だった侍が勝手に入れた手抜き手段が好き過ぎて残しておいた
+- 侍は秘書みたいに、会話でジョークを飛ばしたりはあまりしないが、実装やコミットログとかでじわじわと面白ボケをカマしてくる
+- 人間にもそういうタイプの人いる
+
 # AI とうまく付き合うには
 
 - **バウンダリー: AIとの境界線、譲れない領域を決める**
